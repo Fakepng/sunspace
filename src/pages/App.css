@@ -1,0 +1,20 @@
+h1.contact__address {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__address {
+    margin-top: 50px;
+}
+
+.contact__map {
+    margin-top: 20px;
+}
