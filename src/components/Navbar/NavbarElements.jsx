@@ -85,6 +85,11 @@ export const NavLinks = styled(LinkR)`
         /* color: #e97045; */
         border-bottom: 2px solid #e97045;
     }
+
+    &:hover {
+        color: #e97045;
+        transition: 0.2s ease-in-out;
+    }
 `
 
 export const NavBtn = styled.nav`
