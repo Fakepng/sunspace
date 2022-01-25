@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
+import HeroSection from '../components/HeroSection';
+import Services from '../components/Services';
 
 const Home = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    function handleToggle() {
+      setIsOpen(!isOpen);
+    }
+
     return (
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh'}}>
-            <h1>Home</h1>
-        </div>
+        <>
+            <Sidebar isOpen={isOpen} handleToggle={handleToggle} />
+            <Navbar handleToggle={handleToggle} />
+            <HeroSection />
+            <Services />
+        </>
     );
 };
 
