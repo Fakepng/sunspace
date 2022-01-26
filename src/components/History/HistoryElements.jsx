@@ -7,7 +7,6 @@ export const HistoryContainer = styled.div`
     justify-content: center;
     align-items: center;
     background: #010606;
-    padding-top: 100px;
 
     @media screen and (max-width: 768px) {
         height: 1100px;
