@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
-import Hamburger from 'hamburger-react'
+// import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import './Navbar.css';
@@ -9,7 +8,7 @@ const Navbar = () => {
     const [click, setClick] = React.useState(false);
 
     const handleClick = () => setClick(!click);
-    const Close = () => setClick(false);
+    // const Close = () => setClick(false);
 
     return (
         <>
