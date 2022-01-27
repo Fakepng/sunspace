@@ -36,6 +36,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className='MobileView'>
+                <a href='#home' className='MobileLogo'>
+                        <img src={"/images/logo.svg"} alt='Logo' />
+                </a>
                 <div className='MobileDiv' onClick={handleClick}>
                     {
                         click ? <AiOutlineClose className='MobileBar' /> : <FaBars className='MobileBar' />

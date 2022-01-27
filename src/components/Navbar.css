@@ -62,6 +62,18 @@
     top: 0;
 }
 
+.MobileLogo {
+    color: #fff;
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    background: transparent;
+    font-size: 2rem;
+    outline: none;
+    cursor: pointer;
+    z-index: 996;
+}
+
 .MobileBar {
     color: #fff;
     position: absolute;
