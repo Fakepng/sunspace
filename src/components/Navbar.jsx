@@ -41,21 +41,23 @@ const Navbar = () => {
                         click ? <AiOutlineClose className='MobileBar' /> : <FaBars className='MobileBar' />
                     }
                 </div>
-                <ul className={click ? 'MobileItem active' : 'MobileItem'}>
+            </div>
+            <div className='MobileFull'>
+                <ul className={click ? 'MobileItem' : 'MobileItemClose'}>
                     <li>
-                        <a href="#home">หน้าหลัก</a>
+                        <a href="#home" onClick={handleClick}>หน้าหลัก</a>
                     </li>
                     <li>
-                        <a href="#service">บริการ</a>
+                        <a href="#service" onClick={handleClick}>บริการ</a>
                     </li>
                     <li>
-                        <a href="#ability">ความสามารถ</a>
+                        <a href="#ability" onClick={handleClick}>ความสามารถ</a>
                     </li>
                     <li>
-                        <a href="#history">ผลงาน</a>
+                        <a href="#history" onClick={handleClick}>ผลงาน</a>
                     </li>
                     <li>
-                        <a href="#contact">ติดต่อ</a>
+                        <a href="#contact" onClick={handleClick}>ติดต่อ</a>
                     </li>
                 </ul>
             </div>
