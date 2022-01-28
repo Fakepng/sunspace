@@ -1,0 +1,98 @@
+.Contact_container {
+    display: grid;
+    height: auto;
+    background-color: #000;
+    /* border: 1px solid red; */
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.Contact_container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2.5rem;
+    width: 100%;
+    padding: 80px 0;
+}
+
+.Contact_wrapper {
+    display: flex;
+    /* padding: 20px; */
+    padding-top: 80px;
+    width: 100%;
+    padding: 0 20%;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .Contact_wrapper {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Contact_wrapper {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+}
+
+.Contact_content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    width: 50%;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .Contact_content {
+        width: 100%;
+        padding: 20px 20px;
+        grid-template-rows: 250px 250px;
+        /* align-items: center; */
+    }
+}
+
+.Contact_content div {
+    display: grid;
+    grid-template-rows: 40% 20% 40%;
+    text-align: center;
+    align-items: center;
+    /* border: 1px solid blue; */
+    background-color: #292d33;
+    padding: 20px;
+    color: #fff;
+}
+
+.Contact_content h5 {
+    font-size: 1.5rem;
+}
+
+.Contact_content p {
+    font-size: 1rem;
+}
+
+.Contact_Icon {
+    position: relative;
+    left: 43%;
+    font-size: 2rem;
+}
+
+.GoogleMap {
+    display: flex;
+    flex: 1;
+    height: auto;
+    float: right;
+    /* border: 1px solid green; */
+    padding-right: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .GoogleMap {
+        padding-left: 20px;
+    }
+}

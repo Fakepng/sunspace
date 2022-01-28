@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 import Home from './pages';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
-import Service from './components/Services';
+import Service from './components/Services'
 import History from './components/History'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <HeroSection />
       <Service />
       <History />
+      <Contact />
     </div>
   );
 }
