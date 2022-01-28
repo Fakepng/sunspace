@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -6,13 +6,40 @@ import './Navbar.css';
 
 const Navbar = () => {
     const [click, setClick] = React.useState(false);
-
     const handleClick = () => setClick(!click);
     // const Close = () => setClick(false);
 
+    const [browsernavbar, setBrowserNavbar] = useState('BrowserNavbarTransparent');
+    const listenScrollEventBrowser = e => {
+        if (window.scrollY < 100) {
+            return setBrowserNavbar('BrowserNavbarTransparent');
+        } else if (window.scrollY > 100) {
+            return setBrowserNavbar('BrowserNavbar');
+        }
+    }
+
+    const [mobilenavbar, setMobileNavbar] = useState('MobileViewTransparent');
+    const listenScrollEventMobile = e => {
+        if (window.scrollY < 100) {
+            return setBrowserNavbar('MobileViewTransparent');
+        } else if (window.scrollY > 100) {
+            return setBrowserNavbar('MobileView');
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEventBrowser);
+        return () => window.removeEventListener('scroll', listenScrollEventBrowser);
+    }, [])
+
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEventMobile);
+        return () => window.removeEventListener('scroll', listenScrollEventMobile);
+    }, [])
+
     return (
         <>
-            <div className='BrowserNavbar'>
+            <div className={browsernavbar}>
                 <ul className='BrowserMenu'>
                     <a href='#home' className='BrowserLogo'>
                         <img src={"/images/logo.svg"} alt='Logo' />
@@ -34,7 +61,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <div className='MobileView'>
+            <div className={mobilenavbar}>
                 <a href='#home' className='MobileLogo'>
                         <img src={"/images/logo.svg"} alt='Logo' />
                 </a>
