@@ -30,7 +30,7 @@ const Navbar = () => {
                         <a href="#history">ผลงาน</a>
                     </li>
                     <li>
-                        <a href="#contact">ติดต่อ</a>
+                        <a href="#contact" className='NavBtn'>ติดต่อ</a>
                     </li>
                 </ul>
             </div>
@@ -59,7 +59,7 @@ const Navbar = () => {
                         <a href="#history" onClick={handleClick}>ผลงาน</a>
                     </li>
                     <li>
-                        <a href="#contact" onClick={handleClick}>ติดต่อ</a>
+                        <a href="#contact" onClick={handleClick} className='NavBtn'>ติดต่อ</a>
                     </li>
                 </ul>
             </div>
