@@ -108,6 +108,7 @@
     width: 100%;
     height: 100%;
     font-size: 2rem;
+    transition: 0.3s ease-in-out;
 }
 
 .MobileItemClose {
@@ -116,17 +117,27 @@
 
 .BrowserMenu a {
     font-size: 1.3rem;
-}
-
-a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s ease-in-out;
 }
 
-a:hover {
+.MobileItem a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.BrowserMenu a:hover {
     color: #e97045;
     text-decoration: none;
     font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.MobileItem a:hover {
+    color: #e97045;
+    text-decoration: none;
+    font-size: 2.5rem;
     transition: 0.3s ease-in-out;
 }
